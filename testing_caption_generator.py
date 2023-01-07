@@ -56,8 +56,8 @@ def generate_desc(model, tokenizer, photo, max_length):
 
 #path = 'Flicker8k_Dataset/111537222_07e56d5a30.jpg'
 max_length = 32
-tokenizer = load(open("/content/Flickr_8k_Text/tokenizer.p","rb"))
-model = load_model('/content/Flickr_8k_Text/models/model_9.h5')
+tokenizer = load(open("/content/drive/MyDrive/image_desc_framework/tokenizer.p","rb"))
+model = load_model('/content/drive/MyDrive/image_desc_framework/models/model_9.h5')
 xception_model = Xception(include_top=False, pooling="avg")
 
 photo = extract_features(img_path, xception_model)
